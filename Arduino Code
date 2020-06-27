@@ -10,29 +10,29 @@ void setup()
   pinMode(6, OUTPUT); 
   pinMode(7, OUTPUT);
 
-  tone(10,400,200);delay(300);
+  tone(10,700,100);delay(300);
   
   analogWrite(4, 255);
   analogWrite(7, 255);
   
-  	// Turn on motor A & B
+  	// Turn on motors A & B
 	digitalWrite(3, HIGH);
 	digitalWrite(2, LOW);
 	digitalWrite(6, HIGH);
 	digitalWrite(5, LOW);
 	delay(2000);
 	
-    tone(10,400,200);delay(300);  tone(10,400,200);delay(300);
+    tone(10,700,100);delay(300);  tone(10,700,100);delay(300);
   
-	// Now change motor directions
+	// Now change motors directions
 	digitalWrite(3, LOW);
 	digitalWrite(2, HIGH);
 	digitalWrite(6, LOW);
 	digitalWrite(5, HIGH);
 	delay(2000);
 
-    tone(10,400,200);delay(300);  tone(10,400,200);delay(300);
-  tone(10,400,200);delay(300);
+    tone(10,700,100);delay(300);  tone(10,700,100);delay(300);
+    tone(10,700,300);delay(300);
 
 
 	// Turn off motors
@@ -40,7 +40,10 @@ void setup()
 	digitalWrite(3, LOW);
 	digitalWrite(5, LOW);
 	digitalWrite(6, LOW);
+}
+
+
+void loop() {
   
 }
 
-void loop() {}
